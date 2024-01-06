@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Mi Portfolio - Bienvenido</title>
+    <style>
+        body {
+            background-color: #000;
+            text-align: center;
+            padding: 50px;
+            margin-top: 300px;
+        }
+
+        .introduction-text1, .introduction-text2, .introduction-text3  {
+            color: white;
+            font-family: 'Courier New', monospace; /* Cambia la fuente de letra */
+            font-size: 1.2em; /* Ajusta el tamaño de la letra según tus preferencias */
+            line-height: 1.6; /* Ajusta el espacio entre líneas */
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            opacity: 0; /* Inicialmente oculta el texto */
+            font-family: 'Courier New', monospace; /* Cambia la fuente de letra */
+            color: #db34a9;
+        }
+
+        .btn-portfolio {
+            margin-top: 20px;
+            background: linear-gradient(45deg, #db34a9, #0099ff); /* Cambia los colores según tus preferencias */
+            border: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="bienvenido-container">
+        <!-- Sección bienvenido -->
+        <h1>Bienvenido a mi Portfolio</h1>
+
+        
+        <!-- Sección texto de introducción -->
+        <p class="introduction-text1">
+            ¡Hola! Soy [Tu Nombre], un apasionado profesional del desarrollo web y la tecnología. Bienvenido a mi mundo digital, donde convergen la creatividad y la innovación.
+        </p>
+
+        <p class="introduction-text2">
+            Este portfolio es mi ventana al ciberespacio, un espacio donde puedes explorar mis proyectos, descubrir mi enfoque en el desarrollo y conocer más sobre mi viaje en la tecnología. ¡Espero que disfrutes navegando por mi portfolio tanto como yo disfruto creándolo!
+        </p>
+
+        <p class="introduction-text3">
+            ¡Gracias por visitar y descubrir más sobre mí y mi trabajo!
+        </p>
+
+        <!-- Sección botón -->
+        <a href="index.html" class="btn btn-primary btn-lg btn-portfolio">Lets Go!</a>
+    </div>
+
+    <!-- Scripts de Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script para la animación de aparición letra por letra -->
+    <script>
+        function animarTexto() {
+            var bienvenido = $("#bienvenido-container h1");
+            bienvenido.css("opacity", "1"); // Mostrar el texto
+            var texto = bienvenido.text();
+            bienvenido.empty();
+            
+            // Agregar cada letra con animación
+            for (var i = 0; i < texto.length; i++) {
+                bienvenido.append('<span class="letter" style="opacity: 0;">' + texto[i] + '</span>');
+                $(".letter:last-child").delay(i * 100).animate({ opacity: 1 }, 50);
+            }
+        }
+
+        // Llamar a la función de animación cada 4 segundos
+        setInterval(animarTexto, 8000);
+
+        // Ejecutar la animación por primera vez
+        animarTexto();
+    </script>
+
+<script>
+    function animarTexto() {
+        $(".introduction-text1").each(function() {
+            var texto = $(this).text();
+            $(this).empty();
+            
+            // Agregar cada letra con animación
+            for (var i = 0; i < texto.length; i++) {
+                $(this).append('<span class="letter" style="opacity: 0;">' + texto[i] + '</span>');
+                $(".letter:last-child").delay(i * 50).animate({ opacity: 1 }, 50);
+            }
+        });
+    }
+
+ 
+
+    // Ejecutar la animación por primera vez
+    animarTexto();
+</script>
+<script>
+    function animarTexto() {
+        $(".introduction-text2").each(function() {
+            var texto = $(this).text();
+            $(this).empty();
+            
+            // Agregar cada letra con animación
+            for (var i = 0; i < texto.length; i++) {
+                $(this).append('<span class="letter" style="opacity: 0;">' + texto[i] + '</span>');
+                $(".letter:last-child").delay(i * 50).animate({ opacity: 1 }, 100);
+            }
+        });
+    }
+    
+    // Ejecutar la animación por primera vez
+    animarTexto();
+</script>
+
+
+
+<script>
+    function animarTexto() {
+        $(".introduction-text3").each(function() {
+            var texto = $(this).text();
+            $(this).empty();
+            
+            // Agregar cada letra con animación
+            for (var i = 0; i < texto.length; i++) {
+                $(this).append('<span class="letter" style="opacity: 0;">' + texto[i] + '</span>');
+                $(".letter:last-child").delay(i * 100).animate({ opacity: 1 }, 100);
+            }
+        });
+    }
+    
+    // Ejecutar la animación por primera vez
+    animarTexto();
+</script>
+
+    
+</body>
+</html>
