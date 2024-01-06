@@ -1,0 +1,171 @@
+body, html {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #070707;
+  scroll-behavior: smooth;
+  color: white
+
+}
+
+.navbar {
+  background-color: #000000;
+}
+
+.navbar-brand, .navbar-nav a {
+  color: white;
+  font-size: 14px;
+}
+
+.navbar-toggler {
+  color: white;
+  border-color: white;
+}
+
+.navbar-nav {
+
+  text-align: left.01; /* Cambiado a izquierda */
+}
+
+.container {
+  max-width: 800px;
+}
+
+section {
+  padding: 2em;
+  margin-bottom: 1em;
+  
+  border-bottom: 2px solid #a7177c; /* Línea divisoria entre secciones */
+  
+}
+
+h2 {
+  color: #db34a9;
+}
+
+
+
+/* Estilos adicionales para el cuadrado de fondo gris */
+.image-placeholder {
+  background-color: #ccc; /* Color de fondo gris */
+  height: 0;
+  padding-top: 100%; /* Proporción cuadrada (1:1) */
+}
+
+/* Estilos adicionales para la sección de experiencia */
+.experience-item {
+  margin-top: 5em;
+  margin-bottom: 2em;
+}
+
+.experience-item h3 {
+  margin-bottom: 0.5em;
+}
+
+.experience-item p.text-muted {
+  margin-bottom: 0.5em;
+}
+
+/* Estilos adicionales para la sección de educación */
+.education-item {
+  margin-bottom: 2em;
+}
+
+.education-item h3 {
+  margin-bottom: 0.5em;
+}
+
+.skill-item {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+progress {
+  width: 100%; /* Ajusta el ancho del círculo según tus preferencias */
+  height: 30px;
+  appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #ddd;
+  border-radius: 8px;
+}
+
+progress::-webkit-progress-value {
+  background-image:
+      linear-gradient(90deg, #db34a9, #0099ff),
+      linear-gradient(90deg, #ddd, #ddd);
+  border-radius: 8px;
+}
+
+.progress-circle p {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+
+/* Estilos para los botones de proyectos */
+.btn-proyecto  {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Ajustes para mostrar las tarjetas de dos en dos */
+@media (min-width: 768px) {
+  .card-deck .card {
+      flex: 0 0 48%;
+      margin-right: 4%;
+  }
+}
+ .card{
+  color: #000000;
+ }
+
+/* Añade esto a tu archivo de estilos CSS */
+
+/* Estilo de degradado para los botones de GitHub */
+.btn-degradado {
+  background: linear-gradient(45deg, #ff85c2, #56d5ff); /* Cambia los colores según tus preferencias */
+  color: rgb(0, 0, 0); /* Color del texto para que destaque en el degradado */
+  transition: background 0.3s ease; /* Añade una transición suave para el cambio de color */
+}
+
+/* Cuando el cursor pasa sobre el botón, cambiar el degradado */
+.btn-degradado:hover {
+  background: linear-gradient(45deg, #db34a9, #0099ff); /* Cambia los colores según tus preferencias */
+}
+ .list-group-item{
+  color: #000000;
+ }
+
+ /* Estilos para los botones de la sección de contacto */
+#contacto .btn {
+  margin-bottom: 10px; /* Espaciado entre botones */
+}
+
+#contacto .btn i {
+  margin-right: 10px; /* Espaciado entre el icono y el texto del botón */
+}
+
+#contacto .btn-primary {
+  background: linear-gradient(45deg, #db34a9, #0099ff); /* Cambia los colores según tus preferencias */
+
+}
+
+#contacto .btn-success {
+  background: linear-gradient(45deg, #db34a9, #0099ff); /* Cambia los colores según tus preferencias */
+
+}
+
+#contacto .btn-info {
+  background: linear-gradient(45deg, #db34a9, #0099ff); /* Cambia los colores según tus preferencias */
+
+}
+
+#contacto .btn-warning {
+  background: linear-gradient(45deg, #db34a9, #0099ff); /* Cambia los colores según tus preferencias */
+  color: white;
+
+}
+
+/* Estilos adicionales según necesidades */
