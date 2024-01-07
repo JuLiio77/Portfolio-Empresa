@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.hogwarts.ui.fragments.FirstFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_FirstFragment_to_secretoFragment"
+            app:destination="@id/secretoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/characterFragment"
+        android:name="com.example.hogwarts.ui.fragments.CharacterFragment"
+        android:label="Characters" >
+        <action
+            android:id="@+id/action_characterFragment_to_characterDetailsFragment"
+            app:destination="@id/characterDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/housesFragment"
+        android:name="com.example.hogwarts.ui.fragments.HousesFragment"
+        android:label="Houses" >
+        <action
+            android:id="@+id/action_housesFragment_to_characterDetailsFragment"
+            app:destination="@id/characterDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/spellsFragment"
+        android:name="com.example.hogwarts.ui.fragments.SpellsFragment"
+        android:label="Spells" />
+    <fragment
+        android:id="@+id/characterDetailsFragment"
+        android:name="com.example.hogwarts.ui.fragments.CharacterDetailsFragment"
+        android:label="CharacterDetailsFragment" />
+    <fragment
+        android:id="@+id/secretoFragment"
+        android:name="com.example.hogwarts.ui.fragments.easterEgg.SecretoFragment"
+        android:label="SecretoFragment" >
+        <action
+            android:id="@+id/action_secretoFragment_to_pregunta1Fragment"
+            app:destination="@id/pregunta1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pregunta1Fragment"
+        android:name="Pregunta1Fragment"
+        android:label="Pregunta1Fragment" >
+        <action
+            android:id="@+id/action_pregunta1Fragment_to_pregunta2Fragment"
+            app:destination="@id/pregunta2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pregunta2Fragment"
+        android:name="com.example.hogwarts.ui.fragments.easterEgg.Pregunta2Fragment"
+        android:label="Pregunta2Fragment" >
+        <action
+            android:id="@+id/action_pregunta2Fragment_to_pregunta3Fragment"
+            app:destination="@id/pregunta3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pregunta3Fragment"
+        android:name="com.example.hogwarts.ui.fragments.easterEgg.Pregunta3Fragment"
+        android:label="Pregunta3Fragment" >
+        <action
+            android:id="@+id/action_pregunta3Fragment_to_pregunta4Fragment"
+            app:destination="@id/pregunta4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pregunta4Fragment"
+        android:name="com.example.hogwarts.ui.fragments.easterEgg.Pregunta4Fragment"
+        android:label="Pregunta4Fragment" >
+        <action
+            android:id="@+id/action_pregunta4Fragment_to_pregunta5Fragment"
+            app:destination="@id/pregunta5Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pregunta5Fragment"
+        android:name="com.example.hogwarts.ui.fragments.easterEgg.Pregunta5Fragment"
+        android:label="Pregunta5Fragment" >
+        <action
+            android:id="@+id/action_pregunta5Fragment_to_resultadoFragment"
+            app:destination="@id/resultadoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultadoFragment"
+        android:name="com.example.hogwarts.ui.fragments.easterEgg.ResultadoFragment"
+        android:label="ResultadoFragment" >
+        <action
+            android:id="@+id/action_resultadoFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+</navigation>
