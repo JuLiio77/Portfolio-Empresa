@@ -121,6 +121,12 @@ progress::-webkit-progress-value {
   color: #000000;
  }
 
+ .card-body{
+  background-color: #202020;
+  color: white;
+  border: #000000;
+ }
+
 /* Añade esto a tu archivo de estilos CSS */
 
 /* Estilo de degradado para los botones de GitHub */
@@ -128,11 +134,13 @@ progress::-webkit-progress-value {
   background: linear-gradient(45deg, #ff85c2, #56d5ff); /* Cambia los colores según tus preferencias */
   color: rgb(0, 0, 0); /* Color del texto para que destaque en el degradado */
   transition: background 0.3s ease; /* Añade una transición suave para el cambio de color */
+  border: #000000;
 }
 
 /* Cuando el cursor pasa sobre el botón, cambiar el degradado */
 .btn-degradado:hover {
   background: linear-gradient(45deg, #db34a9, #0099ff); /* Cambia los colores según tus preferencias */
+  color: white;
 }
  .list-group-item{
   color: #000000;
@@ -147,25 +155,31 @@ progress::-webkit-progress-value {
   margin-right: 10px; /* Espaciado entre el icono y el texto del botón */
 }
 
-#contacto .btn-primary {
+#contacto .btn-telefono {
   background: linear-gradient(45deg, #db34a9, #0099ff); /* Cambia los colores según tus preferencias */
-
-}
-
-#contacto .btn-success {
-  background: linear-gradient(45deg, #db34a9, #0099ff); /* Cambia los colores según tus preferencias */
-
-}
-
-#contacto .btn-info {
-  background: linear-gradient(45deg, #db34a9, #0099ff); /* Cambia los colores según tus preferencias */
-
-}
-
-#contacto .btn-warning {
-  background: linear-gradient(45deg, #db34a9, #0099ff); /* Cambia los colores según tus preferencias */
+  border: #000000;
   color: white;
 
 }
 
-/* Estilos adicionales según necesidades */
+#contacto .btn-correo {
+  background: linear-gradient(45deg, #0099ff, #db34a9); /* Cambia los colores según tus preferencias */
+  border: #000000;
+  color: white;
+
+}
+
+#contacto .btn-github {
+  background: linear-gradient(45deg, #db34a9, #0099ff); /* Cambia los colores según tus preferencias */
+  border: #000000;
+  color: white;
+
+}
+
+#contacto .btn-linkedin {
+  background: linear-gradient(45deg, #0099ff, #db34a9); /* Cambia los colores según tus preferencias */
+  border: #000000;
+  color: white;
+
+}
+
