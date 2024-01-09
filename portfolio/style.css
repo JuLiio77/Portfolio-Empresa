@@ -1,15 +1,15 @@
 body, html {
-  font-family: Arial, sans-serif;
+ font-family: monospace;
   margin: 0;
   padding: 0;
   background-color: #070707;
   scroll-behavior: smooth;
-  color: white
+  color: white; 
 
 }
 
 .navbar {
-  background-color: #000000;
+  background-color: #470a35;
 }
 
 .navbar-brand, .navbar-nav a {
@@ -21,10 +21,11 @@ body, html {
   color: white;
   border-color: white;
 }
-
 .navbar-nav {
-
-  text-align: left.01; /* Cambiado a izquierda */
+  margin: auto; /* Centra las opciones del menú en la pantalla de ordenador */
+  display: flex;
+  justify-content: space-around;
+  width: 35%; /* Ancho de la barra de navegación */
 }
 
 .container {
@@ -34,8 +35,8 @@ body, html {
 section {
   padding: 2em;
   margin-bottom: 1em;
-  
   border-bottom: 2px solid #a7177c; /* Línea divisoria entre secciones */
+  font-size: 1.3em;
   
 }
 
@@ -43,6 +44,52 @@ h2 {
   color: #db34a9;
 }
 
+
+/* Estilos para la sección Software Developer */
+
+#software-developer {
+  background-color: #070707; /* Cambia el color de fondo según tus preferencias */
+  padding: 50px ;
+  text-align: center;
+  margin-top: 200px;
+}
+
+
+.titulo{
+  font-size: 5.2em; /* Ajusta el tamaño de la fuente del título según tus necesidades */
+  color: #e02aaa; /* Cambia los colores según tus preferencias */
+
+}
+
+
+.developer-photo {
+  width: 150px; /* Ajusta el tamaño de la foto según tus necesidades */
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px; /* Ajusta el margen inferior según tus necesidades */
+}
+
+.developer-text {
+  font-size: 1.2em;
+  margin-top: 20px;
+  margin-bottom: 40px; /* Ajusta el margen inferior según tus necesidades */
+}
+
+.btn-scroll {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #db34a9, #0099ff); /* Cambia los colores según tus preferencias */
+  color: #fff;
+  border-radius: 50px;
+
+}
+
+.btn-scroll:hover {
+  background: linear-gradient(45deg, #ff85c2, #56d5ff);
+  color: #000000;
+}
 
 
 /* Estilos adicionales para el cuadrado de fondo gris */
@@ -119,6 +166,17 @@ progress::-webkit-progress-value {
 }
  .card{
   color: #000000;
+  border: #000000;
+  border-radius: 10%;
+
+ }
+
+ .card-img-top{
+  width: 100%;
+  height: 120px;
+  color: #202020;
+  background-color: #000000;
+  
  }
 
  .card-body{
@@ -133,7 +191,6 @@ progress::-webkit-progress-value {
 .btn-degradado {
   background: linear-gradient(45deg, #ff85c2, #56d5ff); /* Cambia los colores según tus preferencias */
   color: rgb(0, 0, 0); /* Color del texto para que destaque en el degradado */
-  transition: background 0.3s ease; /* Añade una transición suave para el cambio de color */
   border: #000000;
 }
 
@@ -156,30 +213,78 @@ progress::-webkit-progress-value {
 }
 
 #contacto .btn-telefono {
-  background: linear-gradient(45deg, #db34a9, #0099ff); /* Cambia los colores según tus preferencias */
+  background: linear-gradient(45deg, #ff85c2, #56d5ff); /* Cambia los colores según tus preferencias */
   border: #000000;
-  color: white;
+  color: rgb(0, 0, 0);
 
 }
 
 #contacto .btn-correo {
-  background: linear-gradient(45deg, #0099ff, #db34a9); /* Cambia los colores según tus preferencias */
+  background: linear-gradient(45deg,#56d5ff, #ff85c2 ); /* Cambia los colores según tus preferencias */
   border: #000000;
-  color: white;
+  color: rgb(0, 0, 0);
 
 }
 
 #contacto .btn-github {
-  background: linear-gradient(45deg, #db34a9, #0099ff); /* Cambia los colores según tus preferencias */
+  background: linear-gradient(45deg, #ff85c2, #56d5ff); /* Cambia los colores según tus preferencias */
   border: #000000;
-  color: white;
+  color: rgb(0, 0, 0);
 
 }
 
 #contacto .btn-linkedin {
-  background: linear-gradient(45deg, #0099ff, #db34a9); /* Cambia los colores según tus preferencias */
+  background: linear-gradient(45deg,#56d5ff, #ff85c2 ); /* Cambia los colores según tus preferencias */
   border: #000000;
-  color: white;
+  color: rgb(0, 0, 0);
 
 }
 
+
+#contacto .btn-telefono:hover {
+  background: linear-gradient(45deg, #0099ff, #db34a9); /* Cambia los colores según tus preferencias */
+  color: white;
+}
+
+#contacto .btn-correo:hover {
+  background: linear-gradient(45deg, #0099ff, #db34a9); /* Cambia los colores según tus preferencias */
+  color: white;
+}
+
+
+#contacto .btn-github:hover {
+  background: linear-gradient(45deg, #0099ff, #db34a9); /* Cambia los colores según tus preferencias */
+  color: white;
+}
+
+#contacto .btn-linkedin:hover {
+  background: linear-gradient(45deg, #0099ff, #db34a9); /* Cambia los colores según tus preferencias */
+  color: white;
+}
+
+
+/* Estilos para el footer */
+footer {
+  background-color: #470a35; /* Color de fondo del footer */
+  color: #fff; /* Color del texto */
+  padding: 20px 0; /* Espaciado interno */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+
+}
+
+.footer-logo img {
+  display: block;
+}
+
+.footer-text {
+  text-align: right;
+}
+
+/* Estilos adicionales según tus preferencias */
