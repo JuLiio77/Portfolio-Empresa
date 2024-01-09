@@ -1,5 +1,5 @@
 body, html {
- font-family: monospace;
+ font-family: 'Courier New', Courier, monospace;
   margin: 0;
   padding: 0;
   background-color: #070707;
@@ -26,7 +26,19 @@ body, html {
   display: flex;
   justify-content: space-around;
   width: 50%; /* Ancho de la barra de navegación */
+  text-align: center;
 }
+
+
+
+.navbar-nav .nav-link {
+  color: #8a8a8a !important; /* Cambia el color del texto del menú */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff96df !important; /* Cambia el color del texto al pasar el ratón */
+}
+
 
 .container {
   max-width: 1000px;
@@ -36,7 +48,7 @@ section {
   padding: 2em;
   margin-bottom: 1em;
   border-bottom: 3px solid #a7177c; /* Línea divisoria entre secciones */
-  font-size: 1.3em;
+  font-size: 1.1em;
   
 }
 
@@ -63,14 +75,14 @@ h2 {
 
 
 .developer-photo {
-  width: 150px; /* Ajusta el tamaño de la foto según tus necesidades */
+  width: 280px; /* Ajusta el tamaño de la foto según tus necesidades */
   border-radius: 50%;
   margin-top: 20px;
   margin-bottom: 20px; /* Ajusta el margen inferior según tus necesidades */
 }
 
 .developer-text {
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin-top: 20px;
   margin-bottom: 40px; /* Ajusta el margen inferior según tus necesidades */
 }
@@ -89,6 +101,8 @@ h2 {
 .btn-scroll:hover {
   background: linear-gradient(45deg, #ff85c2, #56d5ff);
   color: #000000;
+  font-weight: 1000;
+
 }
 
 
@@ -99,19 +113,7 @@ h2 {
   padding-top: 100%; /* Proporción cuadrada (1:1) */
 }
 
-/* Estilos adicionales para la sección de experiencia */
-.experience-item {
-  margin-top: 5em;
-  margin-bottom: 2em;
-}
 
-.experience-item h3 {
-  margin-bottom: 0.5em;
-}
-
-.experience-item p.text-muted {
-  margin-bottom: 0.5em;
-}
 
 /* Estilos adicionales para la sección de educación */
 .education-item {
@@ -173,7 +175,7 @@ progress::-webkit-progress-value {
 
  .card-img-top{
   width: 100%;
-  height: 120px;
+  height: 200px;
   color: #202020;
   background-color: #000000;
   
@@ -185,13 +187,15 @@ progress::-webkit-progress-value {
   border: #000000;
  }
 
-/* Añade esto a tu archivo de estilos CSS */
+
 
 /* Estilo de degradado para los botones de GitHub */
 .btn-degradado {
   background: linear-gradient(45deg, #ff85c2, #56d5ff); /* Cambia los colores según tus preferencias */
   color: rgb(0, 0, 0); /* Color del texto para que destaque en el degradado */
   border: #000000;
+  font-weight: 1000;
+
 }
 
 /* Cuando el cursor pasa sobre el botón, cambiar el degradado */
@@ -205,7 +209,7 @@ progress::-webkit-progress-value {
 
  /* Estilos para los botones de la sección de contacto */
 #contacto .btn {
-  margin-bottom: 10px; /* Espaciado entre botones */
+  margin-bottom: 1px; /* Espaciado entre botones */
 }
 
 #contacto .btn i {
@@ -216,6 +220,7 @@ progress::-webkit-progress-value {
   background: linear-gradient(45deg, #ff85c2, #56d5ff); /* Cambia los colores según tus preferencias */
   border: #000000;
   color: rgb(0, 0, 0);
+  font-weight: 1000;
 
 }
 
@@ -223,6 +228,8 @@ progress::-webkit-progress-value {
   background: linear-gradient(45deg,#56d5ff, #ff85c2 ); /* Cambia los colores según tus preferencias */
   border: #000000;
   color: rgb(0, 0, 0);
+  font-weight: 1000;
+
 
 }
 
@@ -230,6 +237,8 @@ progress::-webkit-progress-value {
   background: linear-gradient(45deg, #ff85c2, #56d5ff); /* Cambia los colores según tus preferencias */
   border: #000000;
   color: rgb(0, 0, 0);
+  font-weight: 1000;
+
 
 }
 
@@ -237,6 +246,8 @@ progress::-webkit-progress-value {
   background: linear-gradient(45deg,#56d5ff, #ff85c2 ); /* Cambia los colores según tus preferencias */
   border: #000000;
   color: rgb(0, 0, 0);
+  font-weight: 1000;
+
 
 }
 
@@ -287,5 +298,8 @@ footer {
 .footer-text {
   text-align: right;
 }
+
+
+
 
 /* Estilos adicionales según tus preferencias */
