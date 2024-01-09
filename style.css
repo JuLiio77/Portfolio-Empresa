@@ -242,7 +242,7 @@ progress::-webkit-progress-value {
 
 
 #contacto .btn-telefono:hover {
-  background: linear-gradient(45deg, #0099ff, #db34a9); /* Cambia los colores según tus preferencias */
+  background: linear-gradient(45deg, #db34a9, #0099ff ); /* Cambia los colores según tus preferencias */
   color: white;
 }
 
@@ -253,7 +253,7 @@ progress::-webkit-progress-value {
 
 
 #contacto .btn-github:hover {
-  background: linear-gradient(45deg, #0099ff, #db34a9); /* Cambia los colores según tus preferencias */
+  background: linear-gradient(45deg, #db34a9, #0099ff ); /* Cambia los colores según tus preferencias */
   color: white;
 }
 
