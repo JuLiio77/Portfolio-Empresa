@@ -25,11 +25,11 @@ body, html {
   margin: auto; /* Centra las opciones del menú en la pantalla de ordenador */
   display: flex;
   justify-content: space-around;
-  width: 35%; /* Ancho de la barra de navegación */
+  width: 50%; /* Ancho de la barra de navegación */
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1000px;
 }
 
 section {
