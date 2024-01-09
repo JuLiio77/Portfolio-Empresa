@@ -22,24 +22,23 @@ body, html {
   border-color: white;
 }
 .navbar-nav {
-  margin: auto; /* Centra las opciones del menú en la pantalla de ordenador */
+  margin: auto; 
   display: flex;
   justify-content: space-around;
-  width: 50%; /* Ancho de la barra de navegación */
+  width: 50%; 
   text-align: center;
 }
 
 
 
 .navbar-nav .nav-link {
-  color: #8a8a8a !important; /* Cambia el color del texto del menú */
+  color: #8a8a8a !important; 
 }
 
 .navbar-nav .nav-link:hover {
-  color: #ff96df !important; /* Cambia el color del texto al pasar el ratón */
+  color: #ff96df !important; 
+
 }
-
-
 .container {
   max-width: 1000px;
 }
@@ -47,7 +46,7 @@ body, html {
 section {
   padding: 2em;
   margin-bottom: 1em;
-  border-bottom: 3px solid #a7177c; /* Línea divisoria entre secciones */
+  border-bottom: 3px solid #a7177c;
   font-size: 1.1em;
   
 }
@@ -60,7 +59,7 @@ h2 {
 /* Estilos para la sección Software Developer */
 
 #software-developer {
-  background-color: #070707; /* Cambia el color de fondo según tus preferencias */
+  background-color: #070707; 
   padding: 50px ;
   text-align: center;
   margin-top: 200px;
@@ -68,23 +67,23 @@ h2 {
 
 
 .titulo{
-  font-size: 4.0em; /* Ajusta el tamaño de la fuente del título según tus necesidades */
-  color: #e02aaa; /* Cambia los colores según tus preferencias */
+  font-size: 4.0em; 
+  color: #e02aaa; 
 
 }
 
 
 .developer-photo {
-  width: 280px; /* Ajusta el tamaño de la foto según tus necesidades */
+  width: 280px; 
   border-radius: 50%;
   margin-top: 20px;
-  margin-bottom: 20px; /* Ajusta el margen inferior según tus necesidades */
+  margin-bottom: 20px;
 }
 
 .developer-text {
   font-size: 1.5em;
   margin-top: 20px;
-  margin-bottom: 40px; /* Ajusta el margen inferior según tus necesidades */
+  margin-bottom: 40px; 
 }
 
 .btn-scroll {
@@ -92,7 +91,7 @@ h2 {
   padding: 10px 20px;
   margin-top: 80px;
   margin-bottom: 20px;
-  background: linear-gradient(45deg, #db34a9, #0099ff); /* Cambia los colores según tus preferencias */
+  background: linear-gradient(45deg, #db34a9, #0099ff);
   color: #fff;
   border-radius: 50px;
 
@@ -108,9 +107,9 @@ h2 {
 
 /* Estilos adicionales para el cuadrado de fondo gris */
 .image-placeholder {
-  background-color: #ccc; /* Color de fondo gris */
+  background-color: #ccc;
   height: 0;
-  padding-top: 100%; /* Proporción cuadrada (1:1) */
+  padding-top: 100%; 
 }
 
 
@@ -130,7 +129,7 @@ h2 {
 }
 
 progress {
-  width: 100%; /* Ajusta el ancho del círculo según tus preferencias */
+  width: 100%; 
   height: 30px;
   appearance: none;
 }
@@ -191,8 +190,8 @@ progress::-webkit-progress-value {
 
 /* Estilo de degradado para los botones de GitHub */
 .btn-degradado {
-  background: linear-gradient(45deg, #ff85c2, #56d5ff); /* Cambia los colores según tus preferencias */
-  color: rgb(0, 0, 0); /* Color del texto para que destaque en el degradado */
+  background: linear-gradient(45deg, #ff85c2, #56d5ff);
+  color: rgb(0, 0, 0);
   border: #000000;
   font-weight: 1000;
 
@@ -200,7 +199,7 @@ progress::-webkit-progress-value {
 
 /* Cuando el cursor pasa sobre el botón, cambiar el degradado */
 .btn-degradado:hover {
-  background: linear-gradient(45deg, #db34a9, #0099ff); /* Cambia los colores según tus preferencias */
+  background: linear-gradient(45deg, #db34a9, #0099ff);
   color: white;
 }
  .list-group-item{
@@ -209,15 +208,15 @@ progress::-webkit-progress-value {
 
  /* Estilos para los botones de la sección de contacto */
 #contacto .btn {
-  margin-bottom: 1px; /* Espaciado entre botones */
+  margin-bottom: 1px; 
 }
 
 #contacto .btn i {
-  margin-right: 10px; /* Espaciado entre el icono y el texto del botón */
+  margin-right: 10px; 
 }
 
 #contacto .btn-telefono {
-  background: linear-gradient(45deg, #ff85c2, #56d5ff); /* Cambia los colores según tus preferencias */
+  background: linear-gradient(45deg, #ff85c2, #56d5ff); 
   border: #000000;
   color: rgb(0, 0, 0);
   font-weight: 1000;
@@ -225,7 +224,7 @@ progress::-webkit-progress-value {
 }
 
 #contacto .btn-correo {
-  background: linear-gradient(45deg,#56d5ff, #ff85c2 ); /* Cambia los colores según tus preferencias */
+  background: linear-gradient(45deg,#56d5ff, #ff85c2 ); 
   border: #000000;
   color: rgb(0, 0, 0);
   font-weight: 1000;
@@ -234,7 +233,7 @@ progress::-webkit-progress-value {
 }
 
 #contacto .btn-github {
-  background: linear-gradient(45deg, #ff85c2, #56d5ff); /* Cambia los colores según tus preferencias */
+  background: linear-gradient(45deg, #ff85c2, #56d5ff);
   border: #000000;
   color: rgb(0, 0, 0);
   font-weight: 1000;
@@ -243,7 +242,7 @@ progress::-webkit-progress-value {
 }
 
 #contacto .btn-linkedin {
-  background: linear-gradient(45deg,#56d5ff, #ff85c2 ); /* Cambia los colores según tus preferencias */
+  background: linear-gradient(45deg,#56d5ff, #ff85c2 ); 
   border: #000000;
   color: rgb(0, 0, 0);
   font-weight: 1000;
@@ -253,32 +252,32 @@ progress::-webkit-progress-value {
 
 
 #contacto .btn-telefono:hover {
-  background: linear-gradient(45deg, #db34a9, #0099ff ); /* Cambia los colores según tus preferencias */
+  background: linear-gradient(45deg, #db34a9, #0099ff ); 
   color: white;
 }
 
 #contacto .btn-correo:hover {
-  background: linear-gradient(45deg, #0099ff, #db34a9); /* Cambia los colores según tus preferencias */
+  background: linear-gradient(45deg, #0099ff, #db34a9);
   color: white;
 }
 
 
 #contacto .btn-github:hover {
-  background: linear-gradient(45deg, #db34a9, #0099ff ); /* Cambia los colores según tus preferencias */
+  background: linear-gradient(45deg, #db34a9, #0099ff );
   color: white;
 }
 
 #contacto .btn-linkedin:hover {
-  background: linear-gradient(45deg, #0099ff, #db34a9); /* Cambia los colores según tus preferencias */
+  background: linear-gradient(45deg, #0099ff, #db34a9); 
   color: white;
 }
 
 
 /* Estilos para el footer */
 footer {
-  background-color: #470a35; /* Color de fondo del footer */
-  color: #fff; /* Color del texto */
-  padding: 20px 0; /* Espaciado interno */
+  background-color: #470a35; 
+  color: #fff;
+  padding: 20px 0; 
   width: 100%;
 }
 
@@ -298,8 +297,3 @@ footer {
 .footer-text {
   text-align: right;
 }
-
-
-
-
-/* Estilos adicionales según tus preferencias */
