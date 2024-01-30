@@ -272,6 +272,22 @@ progress::-webkit-progress-value {
   color: white;
 }
 
+/* Ajustes adicionales para el botón de descarga de PDF */
+.btn-descargar-pdf {
+  background: linear-gradient(45deg, #ff85c2, #56d5ff);
+  border: #000000;
+  color: rgb(0, 0, 0);
+  font-weight: 1000;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.btn-descargar-pdf:hover {
+  background: linear-gradient(45deg, #0099ff, #db34a9); 
+  color: white;
+  transform: scale(1.2);
+}
+
 
 /* Estilos para el footer */
 footer {
