@@ -274,16 +274,37 @@ progress::-webkit-progress-value {
 
 /* Ajustes adicionales para el botón de descarga de PDF */
 .btn-descargar-pdf {
-  background: linear-gradient(45deg, #ff85c2, #56d5ff);
+  background: linear-gradient(45deg, #ff85c2, #56d5ff ,#ff85c2 );
   border: #000000;
   color: rgb(0, 0, 0);
   font-weight: 1000;
   transition: transform 0.3s ease-in-out;
-
+  animation: movePulseAndRotate 4s infinite; /* Mueve, pulsa y rota el botón cada 4 segundos */
 }
 
+
+@keyframes movePulseAndRotate {
+  0%, 100% {
+      transform: translateX(0) scale(1); /* Posición y escala iniciales */
+      background-color: #007BFF; /* Color inicial */
+      box-shadow: none; /* Sin sombra inicial */
+  }
+  20% {
+      transform: translateX(20px) scale(1.2); /* Mueve el botón, aumenta la escala en el 20% de la animación */
+      background-color: #db34a9; /* Cambia el color a rojo en el 20% de la animación */
+      box-shadow: 0 0 20px #ff00b3; /* Agrega una sombra en el 20% de la animación */
+  }
+
+  75% {
+      transform: translateX(0) scale(1); /* Vuelve a la posición y escala iniciales en el 75% de la animación */
+      background-color: #007BFF; /* Vuelve al color inicial */
+      box-shadow: none; /* Sin sombra */
+  }
+}
+
+
 .btn-descargar-pdf:hover {
-  background: linear-gradient(45deg, #0099ff, #db34a9); 
+  background: linear-gradient(45deg, #0099ff, #db34a9, #0099ff); 
   color: white;
   transform: scale(1.2);
 }
